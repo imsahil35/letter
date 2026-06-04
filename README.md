@@ -1,1 +1,153 @@
-# letter
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Favorite Person</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --bg-color: #fff5f5;
+        --card-bg: #ffffff;
+        --primary-color: #d63384;
+        --text-color: #4a4a4a;
+        --accent-color: #ff8da1;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container {
+        max-width: 600px;
+        width: 100%;
+        background: var(--card-bg);
+        padding: 40px 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(214, 51, 132, 0.08);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .container::before {
+        content: "❤";
+        position: absolute;
+        top: -30px;
+        left: 20px;
+        font-size: 10rem;
+        color: rgba(255, 141, 161, 0.12);
+        z-index: 0;
+    }
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+    .heart {
+        color: var(--primary-color);
+        font-size: 2rem;
+        margin: 15px 0;
+        animation: heartbeat 1.2s infinite;
+    }
+    @keyframes heartbeat {
+        0% { transform: scale(1); }
+        20% { transform: scale(1.1); }
+        40% { transform: scale(1); }
+        60% { transform: scale(1.15); }
+        80%, 100% { transform: scale(1); }
+    }
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+    .highlight {
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+    .reasons {
+        text-align: left;
+        background: #fffafb;
+        padding: 20px;
+        border-radius: 12px;
+        border-left: 4px solid var(--accent-color);
+        margin: 25px 0;
+    }
+    .reasons h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+    .reasons ul {
+        list-style: none;
+    }
+    .reasons li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+    }
+    .reasons li::before {
+        content: "❤️";
+        margin-right: 10px;
+    }
+    .footer {
+        font-size: 0.9rem;
+        color: #a0a0a0;
+        margin-top: 30px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+    <h1>To My Favorite Person ❤️</h1>
+    <div class="heart">💖</div>
+    <p>
+        I just wanted to create a little corner of the internet to remind you of how incredibly much
+        <span class="highlight">I love you</span>.
+    </p>
+    <p>
+        You bring so much light, warmth, and laughter into my life. Every single day with you is a gift,
+        and I am so grateful for your beautiful smile, your kind heart, and the way you make everything
+        better just by being there.
+    </p>
+    <div class="reasons">
+        <h3>A Few Things I Love About You</h3>
+        <ul>
+            <li>The way your laugh brightens my entire day.</li>
+            <li>Your kindness and the beautiful way you see the world.</li>
+            <li>How safe and incredibly happy I feel whenever you are near.</li>
+            <li>The countless little moments that make me fall for you again and again.</li>
+        </ul>
+    </div>
+    <p>
+        Thank you for being exactly who you are. You have my whole heart, today and always.
+    </p>
+    <div class="footer">
+        Made with love by You Always ✨
+    </div>
+</div>
+</div>
+</body>
+</html>
